@@ -8,7 +8,6 @@ body {
 }
 
 .content-width {
-	--padding-inline-mobile: 1rem;
 	background: yellow;
 	border: 3px solid red;
 	padding-inline: var(--padding-inline-mobile);
