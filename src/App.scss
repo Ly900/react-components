@@ -8,13 +8,14 @@ body {
 }
 
 .content-width {
+	// --padding-inline-mobile: 1rem;
 	background: yellow;
 	// border: 3px solid red;
 	padding-inline: var(--padding-inline-mobile);
 	@media (min-width: 1000px) {
 		display: grid;
 		grid-template-areas: '. content .';
-		grid-template-columns: 1fr minmax(0, 794px) 1fr;
+		grid-template-columns: 1fr minmax(0, var(--max-width)) 1fr;
 		padding-inline: 0;
 	}
 	&__wrapper {

@@ -18,17 +18,20 @@ const FancyText: React.FC<FancyTextProps> = ({ text }) => {
 interface ContentWidthProps {
 	text: string;
 	paddingInlineMobile: number;
+	maxWidth: number;
 }
 
 const ContentWidth: React.FC<ContentWidthProps> = ({
 	text,
 	paddingInlineMobile,
+	maxWidth,
 }) => {
+	const myStyle = {
+		'--padding-inline-mobile': `${paddingInlineMobile}rem`,
+		'--max-width': `${maxWidth}px`,
+	};
 	return (
-		<div
-			className="content-width"
-			style={{ '--padding-inline-mobile': `${paddingInlineMobile}rem` }}
-		>
+		<div className="content-width" style={myStyle}>
 			<div className="content-width__wrapper">{text}</div>
 		</div>
 	);
@@ -41,6 +44,7 @@ function App() {
 
 			<ContentWidth
 				paddingInlineMobile={1}
+				maxWidth={794}
 				text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur sit
 				temporibus quis incidunt illum veniam reprehenderit nostrum, libero
 				autem laborum molestias corporis perspiciatis! Ipsam eligendi minus non
