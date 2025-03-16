@@ -16,18 +16,12 @@ const FancyText: React.FC<FancyTextProps> = ({ text }) => {
 };
 
 interface ContentWidthProps {
-	paddingInlineMobile: number;
 	maxWidth: number;
 	component: any;
 }
 
-const ContentWidth: React.FC<ContentWidthProps> = ({
-	paddingInlineMobile,
-	maxWidth,
-	component,
-}) => {
+const ContentWidth: React.FC<ContentWidthProps> = ({ maxWidth, component }) => {
 	const myStyle = {
-		'--padding-inline-mobile': `${paddingInlineMobile}rem`,
 		'--max-width': `${maxWidth}px`,
 	} as React.CSSProperties;
 	return (
@@ -43,19 +37,16 @@ function App() {
 			<h1>React Components</h1>
 
 			<ContentWidth
-				paddingInlineMobile={1}
 				maxWidth={794}
 				component={<FancyText text="Do. Learn. Grow." />}
 			/>
 
 			<ContentWidth
-				paddingInlineMobile={1}
-				maxWidth={794}
+				maxWidth={850}
 				component={<FancyText text="A Design System You Can Grow With" />}
 			/>
 
 			<ContentWidth
-				paddingInlineMobile={1}
 				maxWidth={794}
 				component={<FancyText text="Styles that won't block you in!" />}
 			/>

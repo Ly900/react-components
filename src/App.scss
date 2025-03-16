@@ -1,5 +1,4 @@
 :root {
-	// --padding-inline-mobile: 1rem;
 }
 
 body {
@@ -8,10 +7,8 @@ body {
 }
 
 .content-width {
-	// --padding-inline-mobile: 1rem;
 	background: yellow;
-	// border: 3px solid red;
-	padding-inline: var(--padding-inline-mobile);
+	padding-inline: 1rem;
 	margin-bottom: 2rem;
 	@media (min-width: 1000px) {
 		display: grid;
