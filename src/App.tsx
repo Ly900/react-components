@@ -15,10 +15,29 @@ const FancyText: React.FC<FancyTextProps> = ({ text }) => {
 	);
 };
 
+interface ContentWidthProps {
+	text: string;
+}
+
+const ContentWidth: React.FC<ContentWidthProps> = ({ text }) => {
+	return (
+		<div className="content-width">
+			<div className="content-width__outer-wrapper">{text}</div>
+		</div>
+	);
+};
+
 function App() {
 	return (
 		<>
 			<h1>React Components</h1>
+
+			<ContentWidth
+				text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur sit
+				temporibus quis incidunt illum veniam reprehenderit nostrum, libero
+				autem laborum molestias corporis perspiciatis! Ipsam eligendi minus non
+				modi atque ipsa"
+			/>
 
 			<FancyText text="Do. Learn. Grow." />
 
