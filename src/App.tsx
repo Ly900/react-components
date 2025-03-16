@@ -29,7 +29,7 @@ const ContentWidth: React.FC<ContentWidthProps> = ({
 	const myStyle = {
 		'--padding-inline-mobile': `${paddingInlineMobile}rem`,
 		'--max-width': `${maxWidth}px`,
-	};
+	} as React.CSSProperties;
 	return (
 		<div className="content-width" style={myStyle}>
 			<div className="content-width__wrapper">{text}</div>
