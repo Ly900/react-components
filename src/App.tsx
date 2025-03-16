@@ -3,10 +3,10 @@ import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.scss';
 
-function FancyText() {
+function FancyText({ text }) {
 	return (
 		<div className="fancy-text">
-			<h2 className="fancy-text__subheading">Fancy Text</h2>
+			<h2 className="fancy-text__subheading">{text}</h2>
 		</div>
 	);
 }
@@ -16,7 +16,11 @@ function App() {
 		<>
 			<h1>React Components</h1>
 
-			<FancyText />
+			<FancyText text="Do. Learn. Grow." />
+
+			<FancyText text="A Design System You Can Grow With" />
+
+			<FancyText text="Styles that won't block you in!" />
 		</>
 	);
 }
