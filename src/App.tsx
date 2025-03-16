@@ -3,13 +3,17 @@ import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.scss';
 
-function FancyText({ text }) {
+interface FancyTextProps {
+	text: string;
+}
+
+const FancyText: React.FC<FancyTextProps> = ({ text }) => {
 	return (
 		<div className="fancy-text">
 			<h2 className="fancy-text__subheading">{text}</h2>
 		</div>
 	);
-}
+};
 
 function App() {
 	return (
