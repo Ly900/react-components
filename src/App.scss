@@ -1,11 +1,17 @@
+:root {
+	// --padding-inline-mobile: 1rem;
+}
+
 body {
 	font-family: 'Open Sans', sans-serif;
 	margin: 0;
 }
 
 .content-width {
+	--padding-inline-mobile: 1rem;
 	background: yellow;
 	border: 3px solid red;
+	padding-inline: var(--padding-inline-mobile);
 }
 
 .fancy-text {

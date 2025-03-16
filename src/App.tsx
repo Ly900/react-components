@@ -17,11 +17,18 @@ const FancyText: React.FC<FancyTextProps> = ({ text }) => {
 
 interface ContentWidthProps {
 	text: string;
+	paddingInlineMobile: number;
 }
 
-const ContentWidth: React.FC<ContentWidthProps> = ({ text }) => {
+const ContentWidth: React.FC<ContentWidthProps> = ({
+	text,
+	paddingInlineMobile,
+}) => {
 	return (
-		<div className="content-width">
+		<div
+			className="content-width"
+			style={{ '--padding-inline-mobile': `${paddingInlineMobile}rem` }}
+		>
 			<div className="content-width__outer-wrapper">{text}</div>
 		</div>
 	);
@@ -33,6 +40,7 @@ function App() {
 			<h1>React Components</h1>
 
 			<ContentWidth
+				paddingInlineMobile={1}
 				text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur sit
 				temporibus quis incidunt illum veniam reprehenderit nostrum, libero
 				autem laborum molestias corporis perspiciatis! Ipsam eligendi minus non
