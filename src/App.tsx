@@ -29,7 +29,7 @@ const ContentWidth: React.FC<ContentWidthProps> = ({
 			className="content-width"
 			style={{ '--padding-inline-mobile': `${paddingInlineMobile}rem` }}
 		>
-			<div className="content-width__outer-wrapper">{text}</div>
+			<div className="content-width__wrapper">{text}</div>
 		</div>
 	);
 };
