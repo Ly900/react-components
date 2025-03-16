@@ -17,16 +17,16 @@ const FancyText: React.FC<FancyTextProps> = ({ text }) => {
 
 interface ContentWidthProps {
 	maxWidth: number;
-	component: any;
+	children: any;
 }
 
-const ContentWidth: React.FC<ContentWidthProps> = ({ maxWidth, component }) => {
+const ContentWidth: React.FC<ContentWidthProps> = ({ maxWidth, children }) => {
 	const myStyle = {
 		'--max-width': `${maxWidth}px`,
 	} as React.CSSProperties;
 	return (
 		<div className="content-width" style={myStyle}>
-			<div className="content-width__wrapper">{component}</div>
+			<div className="content-width__wrapper">{children}</div>
 		</div>
 	);
 };
@@ -36,20 +36,19 @@ function App() {
 		<>
 			<h1>React Components</h1>
 
-			<ContentWidth
-				maxWidth={794}
-				component={<FancyText text="Do. Learn. Grow." />}
-			/>
+			<ContentWidth maxWidth={794}>
+				<FancyText text="Do. Learn. Grow." />
+			</ContentWidth>
 
-			<ContentWidth
-				maxWidth={850}
-				component={<FancyText text="A Design System You Can Grow With" />}
-			/>
+			<ContentWidth maxWidth={850}>
+				<FancyText text="A Design System You Can Grow With" />
+			</ContentWidth>
 
-			<ContentWidth
-				maxWidth={794}
-				component={<FancyText text="Styles that won't block you in!" />}
-			/>
+			<ContentWidth maxWidth={794}>
+				<FancyText text="Styles that won't block you in!" />
+			</ContentWidth>
+
+			<FancyText text="Do. Learn. Grow." />
 
 			<FancyText text="A Design System You Can Grow With" />
 
