@@ -125,19 +125,23 @@ body {
 	grid-gap: 1rem;
 	@media (min-width: 620px) {
 		grid-area: main;
-		grid-template-areas: 'main-content main-sidebar';
+		// grid-template-areas: 'aside main-content';
+		grid-template-rows: min-content auto;
+	}
+	@media (min-width: 994px) {
+		grid-template-areas: 'main-content aside';
 		grid-template-columns: auto minmax(100px, 200px);
 	}
 	&__content {
 		background: red;
-		@media (min-width: 620px) {
+		@media (min-width: 994px) {
 			grid-area: main-content;
 		}
 	}
 	&__sidebar {
 		background: coral;
-		@media (min-width: 620px) {
-			grid-area: main-sidebar;
+		@media (min-width: 994px) {
+			grid-area: aside;
 		}
 	}
 }
