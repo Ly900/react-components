@@ -56,13 +56,14 @@ function App() {
 
 			<div className="template">
 				<div className="header">
+					<h2 className="header__heading">Page Heading</h2>
 					<div className="header__logo">
 						<img
 							className="header__logo-image"
 							src="https://picsum.photos/100/100"
 						/>
 					</div>
-					<div className="header__content-container">
+					<div className="header__content">
 						<p className="header__content">
 							Header content - Lorem ipsum dolor sit amet consectetur,
 							adipisicing elit.
