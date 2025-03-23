@@ -34,7 +34,7 @@ const ContentWidth: React.FC<ContentWidthProps> = ({ maxWidth, children }) => {
 function App() {
 	return (
 		<>
-			<h1>React Components</h1>
+			{/* <h1>React Components</h1>
 
 			<ContentWidth maxWidth={794}>
 				<FancyText text="Do. Learn. Grow." />
@@ -52,7 +52,7 @@ function App() {
 
 			<FancyText text="A Design System You Can Grow With" />
 
-			<FancyText text="Styles that won't block you in!" />
+			<FancyText text="Styles that won't block you in!" /> */}
 
 			<div className="template">
 				<div className="header">
