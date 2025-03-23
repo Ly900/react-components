@@ -53,6 +53,39 @@ function App() {
 			<FancyText text="A Design System You Can Grow With" />
 
 			<FancyText text="Styles that won't block you in!" />
+
+			<div className="template">
+				<div className="header">
+					<div className="header__logo">
+						<img
+							className="header__logo-image"
+							src="https://picsum.photos/100/100"
+						/>
+					</div>
+					<div className="header__content-container">
+						<p className="header__content">
+							Header content - Lorem ipsum dolor sit amet consectetur,
+							adipisicing elit.
+						</p>
+					</div>
+				</div>
+				<div className="template__sidebar">
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos
+					repellat maiores explicabo cumque quas officia nobis accusantium
+					beatae atque impedit quae iusto, sequi laborum labore ipsa animi alias
+					vitae sint, distinctio amet inventore veniam optio, est consequatur!
+					Doloremque praesentium doloribus dolore alias? Unde vero ad quaerat
+					impedit inventore corrupti rem.
+				</div>
+				<div className="main"></div>
+				<div className="footer">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
+						ducimus impedit aut aliquid molestiae molestias doloremque dicta
+						fugiat voluptatum tempore.
+					</p>
+				</div>
+			</div>
 		</>
 	);
 }
