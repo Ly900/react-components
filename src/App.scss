@@ -120,7 +120,7 @@ body {
 }
 
 .main {
-	background: pink;
+	// background: pink;
 	display: grid;
 	grid-gap: 1rem;
 	@media (min-width: 620px) {
@@ -129,11 +129,13 @@ body {
 		grid-template-columns: auto minmax(100px, 200px);
 	}
 	&__content {
+		background: red;
 		@media (min-width: 620px) {
 			grid-area: main-content;
 		}
 	}
 	&__sidebar {
+		background: coral;
 		@media (min-width: 620px) {
 			grid-area: main-sidebar;
 		}

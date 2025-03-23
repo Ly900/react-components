@@ -78,6 +78,10 @@ function App() {
 					impedit inventore corrupti rem.
 				</div>
 				<div className="main">
+					<div className="main__sidebar">
+						Main sidebar - Lorem ipsum dolor, sit amet consectetur adipisicing
+						elit. Temporibus, reprehenderit?
+					</div>
 					<div className="main__content">
 						<ContentWidth maxWidth={794}>
 							<FancyText text="Do. Learn. Grow." />
@@ -90,10 +94,6 @@ function App() {
 						<ContentWidth maxWidth={794}>
 							<FancyText text="Styles that won't block you in!" />
 						</ContentWidth>
-					</div>
-					<div className="main__sidebar">
-						Main sidebar - Lorem ipsum dolor, sit amet consectetur adipisicing
-						elit. Temporibus, reprehenderit?
 					</div>
 				</div>
 				<div className="footer">
