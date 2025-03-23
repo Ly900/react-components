@@ -69,7 +69,7 @@ function App() {
 						</p>
 					</div>
 				</div>
-				<div className="template__sidebar">
+				<div className="sidebar">
 					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos
 					repellat maiores explicabo cumque quas officia nobis accusantium
 					beatae atque impedit quae iusto, sequi laborum labore ipsa animi alias
@@ -77,13 +77,15 @@ function App() {
 					Doloremque praesentium doloribus dolore alias? Unde vero ad quaerat
 					impedit inventore corrupti rem.
 				</div>
-				<div className="main"></div>
+				<div className="main">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique vel
+					consectetur illo neque blanditiis, nam ut libero corrupti veniam
+					maiores eveniet sequi et placeat ipsum temporibus repudiandae.
+					Pariatur consequuntur optio cumque vel fuga, ullam non provident
+					architecto earum dignissimos eaque.
+				</div>
 				<div className="footer">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
-						ducimus impedit aut aliquid molestiae molestias doloremque dicta
-						fugiat voluptatum tempore.
-					</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 				</div>
 			</div>
 		</>

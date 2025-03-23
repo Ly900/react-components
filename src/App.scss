@@ -42,7 +42,9 @@ body {
 
 .template {
 	margin-block: 3rem;
-	// border: 3px solid red;
+	border: 3px solid red;
+	display: grid;
+	grid-gap: 1rem;
 	// padding: 1rem;
 }
 
@@ -59,7 +61,7 @@ body {
 	}
 	@media (min-width: 620px) {
 		grid-template-columns: min-content auto;
-		grid-template-areas: 'logo header-content header-content';
+		grid-template-areas: 'logo header-content';
 		column-gap: 1.5rem;
 	}
 	&__heading {
@@ -97,4 +99,16 @@ body {
 			justify-self: start;
 		}
 	}
+}
+
+.sidebar {
+	background: yellow;
+}
+
+.main {
+	background: pink;
+}
+
+.footer {
+	background: cyan;
 }
