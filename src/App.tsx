@@ -63,10 +63,9 @@ function App() {
 							src="https://picsum.photos/100/100"
 						/>
 					</div>
-					<div className="header__content">
+					<div className="header__content-container">
 						<p className="header__content">
-							Header content - Lorem ipsum dolor sit amet consectetur,
-							adipisicing elit.
+							Header content - Lorem ipsum dolor.
 						</p>
 					</div>
 				</div>
