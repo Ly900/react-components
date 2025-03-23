@@ -78,17 +78,23 @@ function App() {
 					impedit inventore corrupti rem.
 				</div>
 				<div className="main">
-					<ContentWidth maxWidth={794}>
-						<FancyText text="Do. Learn. Grow." />
-					</ContentWidth>
+					<div className="main__content">
+						<ContentWidth maxWidth={794}>
+							<FancyText text="Do. Learn. Grow." />
+						</ContentWidth>
 
-					<ContentWidth maxWidth={850}>
-						<FancyText text="A Design System You Can Grow With" />
-					</ContentWidth>
+						<ContentWidth maxWidth={850}>
+							<FancyText text="A Design System You Can Grow With" />
+						</ContentWidth>
 
-					<ContentWidth maxWidth={794}>
-						<FancyText text="Styles that won't block you in!" />
-					</ContentWidth>
+						<ContentWidth maxWidth={794}>
+							<FancyText text="Styles that won't block you in!" />
+						</ContentWidth>
+					</div>
+					<div className="main__sidebar">
+						Main sidebar - Lorem ipsum dolor, sit amet consectetur adipisicing
+						elit. Temporibus, reprehenderit?
+					</div>
 				</div>
 				<div className="footer">
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>

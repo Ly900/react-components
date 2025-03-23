@@ -14,14 +14,14 @@ body {
 
 .content-width {
 	// background: yellow;
-	padding-inline: 1rem;
+	// padding-inline: 1rem;
 	// margin-bottom: 2rem;
 	@media (min-width: 1000px) {
 		display: grid;
 		grid-template-areas: '. content .';
 		grid-template-columns: 1fr minmax(0, var(--max-width)) 1fr;
 		padding-inline: 0;
-		// margin-bottom: 3rem;
+		background: lightgreen;
 	}
 	&__wrapper {
 		// background: cyan;
@@ -121,8 +121,22 @@ body {
 
 .main {
 	background: pink;
+	display: grid;
+	grid-gap: 1rem;
 	@media (min-width: 620px) {
 		grid-area: main;
+		grid-template-areas: 'main-content main-sidebar';
+		grid-template-columns: auto minmax(100px, 200px);
+	}
+	&__content {
+		@media (min-width: 620px) {
+			grid-area: main-content;
+		}
+	}
+	&__sidebar {
+		@media (min-width: 620px) {
+			grid-area: main-sidebar;
+		}
 	}
 }
 
