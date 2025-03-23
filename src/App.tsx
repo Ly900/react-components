@@ -83,15 +83,15 @@ function App() {
 						elit. Temporibus, reprehenderit?
 					</div>
 					<div className="main__content">
-						<ContentWidth maxWidth={794}>
+						<ContentWidth maxWidth={300}>
 							<FancyText text="Do. Learn. Grow." />
 						</ContentWidth>
 
-						<ContentWidth maxWidth={850}>
+						<ContentWidth maxWidth={500}>
 							<FancyText text="A Design System You Can Grow With" />
 						</ContentWidth>
 
-						<ContentWidth maxWidth={794}>
+						<ContentWidth maxWidth={250}>
 							<FancyText text="Styles that won't block you in!" />
 						</ContentWidth>
 					</div>

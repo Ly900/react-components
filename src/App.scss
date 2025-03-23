@@ -130,7 +130,8 @@ body {
 	}
 	@media (min-width: 994px) {
 		grid-template-areas: 'main-content aside';
-		grid-template-columns: auto minmax(100px, 200px);
+		// grid-template-columns: auto minmax(100px, 200px);
+		grid-template-columns: minmax(auto, 800px) minmax(100px, 1fr);
 	}
 	&__content {
 		background: red;
