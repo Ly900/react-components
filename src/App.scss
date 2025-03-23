@@ -32,7 +32,8 @@ body {
 }
 
 .fancy-text {
-	// border: 3px solid red;
+	border: 3px solid red;
+	text-align: center;
 	&__subheading {
 		font-weight: 600;
 		font-style: normal;
@@ -131,3 +132,19 @@ body {
 		grid-area: footer;
 	}
 }
+
+// .component1 {
+// 	background: orange;
+// }
+
+// .component2 {
+// 	background: lightcoral;
+// }
+
+// .component3 {
+// 	background: orange;
+// }
+
+// .component4 {
+// 	background: lightcoral;
+// }

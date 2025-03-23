@@ -78,11 +78,17 @@ function App() {
 					impedit inventore corrupti rem.
 				</div>
 				<div className="main">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique vel
-					consectetur illo neque blanditiis, nam ut libero corrupti veniam
-					maiores eveniet sequi et placeat ipsum temporibus repudiandae.
-					Pariatur consequuntur optio cumque vel fuga, ullam non provident
-					architecto earum dignissimos eaque.
+					<ContentWidth maxWidth={794}>
+						<FancyText text="Do. Learn. Grow." />
+					</ContentWidth>
+
+					<ContentWidth maxWidth={850}>
+						<FancyText text="A Design System You Can Grow With" />
+					</ContentWidth>
+
+					<ContentWidth maxWidth={794}>
+						<FancyText text="Styles that won't block you in!" />
+					</ContentWidth>
 				</div>
 				<div className="footer">
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
